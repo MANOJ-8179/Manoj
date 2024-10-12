@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Gradient animation for background */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Slide-in animation for table */
+        @keyframes slideIn {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Fade-in and scaling effect for address */
+        @keyframes fadeInScale {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        /* Main container with animated background */
+        .mj {
+            background: linear-gradient(45deg, #ff4e50, #f9d423, #1e90ff);
+            background-size: 300% 300%;
+            animation: gradientAnimation 10s ease infinite;
+            color: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            position: relative;
+            border-radius: 15px;
+        }
+
+        /* Sharp and attractive gradient text */
+        .mj h1 {
+            margin: 0;
+            text-align: left;
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 
+                1px 1px 2px rgba(0, 0, 0, 0.6); /* Subtle shadow for clarity */
+        }
+
+        .mj-content {
+            width: 75%;
+        }
+
+        .mj img {
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        /* Address section with larger text and shadow */
+        .aj {
+            background-color: darkslategrey;
+            color: whitesmoke;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 10px;
+            animation: fadeInScale 2s ease-in-out forwards;
+            text-align: center;
+        }
+
+        .aj h4 {
+            font-size: 28px;
+            margin: 10px 0;
+            text-shadow: 
+                2px 2px 5px rgba(0, 0, 0, 0.7); /* Subtle, clean shadow */
+            color: #ffeb3b; /* Bright yellow */
+        }
+
+        .aj small {
+            font-size: 20px;
+            text-shadow: 
+                1px 1px 2px rgba(0, 0, 0, 0.8),
+                0 0 5px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Table styling and animation */
+        table {
+            color: whitesmoke;
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+            animation: slideIn 2s ease-in-out forwards;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #fff;
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.2);
+            font-weight: bold;
+        }
+
+        td {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Email link styling */
+        .email-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .email-link:hover {
+            color: #ffeb3b; /* Highlight on hover */
+        }
+        
+        /* LinkedIn icon styling */
+        .linkedin-icon {
+            color: #0e76a8; /* LinkedIn blue */
+            margin-left: 5px;
+            font-size: 1.5em; /* Adjust size as needed */
+            vertical-align: middle; /* Align with text */
+        }
+
+        /* LinkedIn URL styling */
+        .linkedin-url {
+            color: whitesmoke; /* Change color as needed */
+            margin-left: 10px;
+            font-size: 1em; /* Adjust font size */
+            text-decoration: underline; /* Underline the URL */
+        }
+    </style>
+</head>
+<body>
+    <div class="Data">
+        <!-- Main Profile Section -->
+        <div class="mj">
+            <div class="mj-content">
+                <h1>MANOJKUMAR M JIDDI</h1>
+                <big><b>Father Name:</b> Marachappa B Jiddi</big><br><br>
+                <big><b>Mother Name:</b> Sumangala M Jiddi </big><br><br>
+                <big><a href="https://www.linkedin.com/in/manojkumar-m-jiddi-16959827b" title="LinkedIn Profile" target="_blank">
+                        <i class="fab fa-linkedin linkedin-icon"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/manojkumar-m-jiddi-16959827b" title="LinkedIn Profile" target="_blank" class="linkedin-url">
+                        https://www.linkedin.com/in/manojkumar-m-jiddi-16959827b
+                    </a>
+                </big><br><br>
+                <big>&#128197;: 01-02-2003</big><br><br>
+                <big>&#128222;: 7676875961</big><br>
+                <big><b>Email:</b> 
+                    <a class="email-link" href="mailto:manojjiddi082@gmail.com">
+                        <i class="fas fa-envelope"></i> manojjiddi082@gmail.com
+                    </a>
+                </big>
+
+                <h3>My Education</h3>
+                <table border="3">
+                    <tr>
+                        <th>Slno</th>
+                        <th>School/College Name</th>
+                        <th>Percentage/Cgpa</th>
+                        <th>Passout Year</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Shree Jagadguru Boodeshwara Vidyapeeta</td>
+                        <td>87%</td>
+                        <td>2019</td>
+                        <td>Hoshalli</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Governament P U College</td>
+                        <td>78%</td>
+                        <td>2021</td>
+                        <td>Gadag</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Krishna Governament Engineering College</td>
+                        <td>8.2</td>
+                        <td>2025</td>
+                        <td>K R Pete</td>
+                    </tr>
+                </table>
+            </div>
+
+            <img src="c:/Users/manum/OneDrive/Pictures/manu.jpg" alt="Profile Image"/>
+        </div>
+
+        <!-- Address Section with Larger Text and Animation -->
+        <div class="aj">
+            <h4>ADDRESS</h4>
+            <big>&#128205;</big><br>
+            <small><b>Manojkumar M Jiddi</b></small><br>
+            <small><b>Bandi oni....At/Mulgund</b></small><br>
+            <small><b>DIS/TAL: Gadag</b></small>
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d320569.0072058448!2d75.8112210087383!3d15.42907545989721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab7ed3d9002b49%3A0xb8482bcdd8f60771!2sMulgund%2C%20Karnataka%20582117%2C%20India!5e0!3m2!1sen!2sus!4v1697267152850!5m2!1sen!2sus" 
+                width="1500" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
